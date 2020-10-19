@@ -1,6 +1,7 @@
 function drawX() {
     let canvasElement = document.getElementById("draw-canvas");
     let context = canvasElement.getContext("2d");
+    context.beginPath();
     context.moveTo(0, 0);
     context.lineTo(300, 150);
     context.moveTo(300, 0);
