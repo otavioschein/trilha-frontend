@@ -21,8 +21,8 @@ function drawGradient() {
     let canvasElement = document.getElementById("draw-canvas");
     let context = canvasElement.getContext("2d");
     let gradient = context.createLinearGradient(100, 0, 300, 0);
-
-    gradient.addColorStop(0, "transparent");
+    context.beginPath();
+    gradient.addColorStop(0, "green");
     gradient.addColorStop(1, "blue");
 
     context.fillStyle = gradient;
