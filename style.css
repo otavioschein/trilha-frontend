@@ -43,7 +43,7 @@ body {
     border-bottom: 1px solid rgb(50,50,50); 
 }
 
-.main-canvas {
+.main {
     background-color: rgba(42, 130, 146, 0.75);
     width: 60vw;
     height: 500px;
@@ -81,4 +81,43 @@ body {
 
 #draw-canvas {
     border: 1px solid white;    
+}
+
+.selecters {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.span-select {
+    display: flex;
+    flex-direction: column;
+}
+
+.span-select span {
+    font-family: Verdana;
+}
+
+.selecter-opt {
+    width: 150px;
+    height: 30px;
+    margin: 1vw 1vw;
+    font-family: Verdana;
+
+    border-radius: 3px;
+    border: 0.5px solid black;
+}
+
+#design-box {
+    width: 13vw;
+    height: 4vw;
+    border: 1px solid black;
+    margin: 0 auto;
+
+    padding-top: 2vw;
+    
+
+}
+
+#design-box span {
+    font-weight: bold;
 }

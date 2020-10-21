@@ -34,3 +34,27 @@ function resetCanvas() {
     let context = canvasElement.getContext("2d");
     context.clearRect(0, 0, 300, 150);
 }
+
+function setBackgroundColor() {
+    let element = document.getElementById("select-background");
+    let value = element.options[element.selectedIndex].value;
+    document.getElementById("design-box").style.backgroundColor = value;
+}
+
+function setTextColor() {
+    let element = document.getElementById("select-text-color");
+    let value = element.options[element.selectedIndex].value;
+    document.getElementById("design-box").style.color = value;
+}
+
+function setTextSize() {
+    let element = document.getElementById("select-text-size");
+    let value = element.options[element.selectedIndex].value;
+    document.getElementById("design-box").style.fontSize = value;
+}
+
+function setFontFamily() {
+    let element = document.getElementById("select-text-font");
+    let value = element.options[element.selectedIndex].value;
+    document.getElementById("design-box").style.fontFamily = value;
+}

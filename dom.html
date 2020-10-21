@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Exemplo dom + js</title>
+</head>
+<body>
+    <div class="header">
+        <nav class="navigation">
+            <li class="nav-list">
+                <ul><a href="canvas.html" class="nav-links">First</a></ul>
+                <ul><a href="dom.html" class="nav-links">Second</a></ul>
+                <ul><a href="" class="nav-links">Third</a></ul>
+            </li>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="selecters">
+            <div class="span-select">
+                <span>Box background color</span>
+                <select id="select-background" class="selecter-opt" onChange="setBackgroundColor()">
+                    <option value="transparent">Transparent</option>
+                    <option value="orchid">Orchid</option>
+                    <option value="tomato">Tomato</option>
+                    <option value="forestgreen">Forest Green</option>
+                </select>
+            </div>
+
+            <div class="span-select">
+                <span>Box text color</span>
+                <select id="select-text-color" class="selecter-opt" onChange="setTextColor()">
+                    <option value="black">Black</option>
+                    <option value="magenta">Magenta</option>
+                    <option value="peru">Peru</option>
+                    <option value="royalblue">Royal Blue</option>
+                </select>
+            </div>
+
+            <div class="span-select">
+                <span>Box text size</span>
+                <select id="select-text-size" class="selecter-opt" onChange="setTextSize()">
+                    <option value="12px">12px</option>
+                    <option value="14px">14px</option>
+                    <option value="16px">16px</option>
+                    <option value="20px">20px</option>
+                    <option value="24px">24px</option>
+                </select>
+            </div>
+
+            <div class="span-select">
+                <span>Box text font</span>
+                <select id="select-text-font" class="selecter-opt" onChange="setFontFamily()">
+                    <option value="verdana">Verdana</option>
+                    <option value="calibri">Calibri</option>
+                    <option value="cursive">Cursive</option>
+                    <option value="monospace">Monospace</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="design-box">
+            <div>
+                <span>Play Hard!</span>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
