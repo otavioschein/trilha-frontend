@@ -57,6 +57,12 @@ body {
     justify-content: space-evenly;
 }
 
+.storages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .buttons {
     margin-top: 30px;    
 } 
@@ -120,4 +126,32 @@ body {
 
 #design-box span {
     font-weight: bold;
+}
+
+.storages h1 {
+    font-family: verdana;
+}
+
+.localstorage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.sessionstorage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.storage-span-select select {
+    margin: 10px auto;
+}
+
+#view-box-local, #view-box-session {
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
 }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="storageScript.js"></script>
+    <title>Exemplo storages + js</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <li class="nav-list">
+                <ul><a href="canvas.html" class="nav-links">Html e Css</a></ul>
+                <ul><a href="dom.html" class="nav-links">Dom</a></ul>
+                <ul><a href="storages.html" class="nav-links">Storage</a></ul>
+                <ul><a href="bootstrap.html" class="nav-links">Bootstrap</a></ul>
+                <ul><a href="promise.html" class="nav-links">Promise</a></ul>
+            </li>
+        </nav>
+    </header>
+
+    <div class="main storages">
+        <div class="localstorage">
+            <h1>Local Storage</h1>
+            <div class="span-select storage-span-select">
+                <span>Background color</span>
+                <select id="select-background-local" class="selecter-opt" onChange="setBackgroundColorLocal()">
+                    <option value="" selected>Choose</option>
+                    <option value="transparent">Transparent</option>
+                    <option value="orchid">Orchid</option>
+                    <option value="tomato">Tomato</option>
+                    <option value="forestgreen">Forest Green</option>
+                </select>
+            </div>
+            <div id="view-box-local"></div>
+        </div>
+
+        <div class="sessionstorage">
+            <h1>Session Storage</h1>
+            <div class="span-select storage-span-select">
+                <span>Background color</span>
+                <select id="select-background-session" class="selecter-opt" onChange="setBackgroundColorSession()">
+                    <option value="" selected>Choose</option>
+                    <option value="transparent">Transparent</option>
+                    <option value="orchid">Orchid</option>
+                    <option value="tomato">Tomato</option>
+                    <option value="forestgreen">Forest Green</option>
+                </select>
+            </div>
+            <div id="view-box-session"></div>
+        </div>
+    </div>
+</body>
+</html>
